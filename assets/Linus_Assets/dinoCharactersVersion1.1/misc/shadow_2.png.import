@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc0bqps40gmop"
-path="res://.godot/imported/platforms.png-282b36b1469e867669635f32a6df5f11.ctex"
+uid="uid://d3f2nhb63uarm"
+path="res://.godot/imported/shadow_2.png-a5fa26ea45f91188175265514c126315.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Felix_Assets/platforms.png"
-dest_files=["res://.godot/imported/platforms.png-282b36b1469e867669635f32a6df5f11.ctex"]
+source_file="res://assets/Linus_Assets/dinoCharactersVersion1.1/misc/shadow_2.png"
+dest_files=["res://.godot/imported/shadow_2.png-a5fa26ea45f91188175265514c126315.ctex"]
 
 [params]
 

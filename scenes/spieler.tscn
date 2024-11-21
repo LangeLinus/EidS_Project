@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://ciksiyx2c8iyk"]
 
-[ext_resource type="Texture2D" uid="uid://cg2nk7ustopqc" path="res://assets/knight.png" id="1_2xtwy"]
+[ext_resource type="Texture2D" uid="uid://cg2nk7ustopqc" path="res://assets/Felix_Assets/knight.png" id="1_2xtwy"]
 [ext_resource type="Script" path="res://scripts/spieler.gd" id="1_ofxmx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2w6do"]

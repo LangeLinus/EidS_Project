@@ -1,55 +1,57 @@
 [gd_scene load_steps=9 format=3 uid="uid://ciksiyx2c8iyk"]
 
-[ext_resource type="Texture2D" uid="uid://cg2nk7ustopqc" path="res://assets/Felix_Assets/knight.png" id="1_2xtwy"]
 [ext_resource type="Script" path="res://scripts/spieler.gd" id="1_ofxmx"]
+[ext_resource type="Texture2D" uid="uid://xgtcjn4u83ht" path="res://assets/Linus_Assets/dinoCharactersVersion1.1/sheets/DinoSprites - mort.png" id="2_nwp0c"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2w6do"]
-atlas = ExtResource("1_2xtwy")
-region = Rect2(0, 0, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_gkiw3"]
+atlas = ExtResource("2_nwp0c")
+region = Rect2(0, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_n151b"]
-atlas = ExtResource("1_2xtwy")
-region = Rect2(32, 0, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_y52bv"]
+atlas = ExtResource("2_nwp0c")
+region = Rect2(24, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bs767"]
-atlas = ExtResource("1_2xtwy")
-region = Rect2(64, 0, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_lyon4"]
+atlas = ExtResource("2_nwp0c")
+region = Rect2(48, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_j6jn0"]
-atlas = ExtResource("1_2xtwy")
-region = Rect2(96, 0, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_fudm4"]
+atlas = ExtResource("2_nwp0c")
+region = Rect2(72, 0, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m5q4q"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2w6do")
+"texture": SubResource("AtlasTexture_gkiw3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_n151b")
+"texture": SubResource("AtlasTexture_y52bv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bs767")
+"texture": SubResource("AtlasTexture_lyon4")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_j6jn0")
+"texture": SubResource("AtlasTexture_fudm4")
 }],
 "loop": true,
 "name": &"default",
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_nkkhq"]
-radius = 5.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hmw3v"]
+size = Vector2(20, 26.6875)
 
 [node name="spieler" type="CharacterBody2D"]
 script = ExtResource("1_ofxmx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-8, -10)
+scale = Vector2(1.66667, 1.83333)
 sprite_frames = SubResource("SpriteFrames_m5q4q")
 autoplay = "default"
-frame_progress = 0.857004
+frame_progress = 0.581965
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 6)
-shape = SubResource("CircleShape2D_nkkhq")
+position = Vector2(-9, -9.65625)
+shape = SubResource("RectangleShape2D_hmw3v")

@@ -1,22 +1,19 @@
 [gd_scene load_steps=3 format=3 uid="uid://1g5tdcj5c28m"]
 
-[ext_resource type="PackedScene" uid="uid://c3wltjxfrif26" path="res://scenes/spieler.tscn" id="1_t1qd2"]
+[ext_resource type="PackedScene" uid="uid://ciksiyx2c8iyk" path="res://scenes/spieler.tscn" id="1_t1qd2"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ucdnl"]
-distance = -16.0
+[sub_resource type="TileSet" id="TileSet_bsai8"]
 
 [node name="Game" type="Node2D"]
 
-[node name="Spieler" parent="." instance=ExtResource("1_t1qd2")]
-position = Vector2(0, -27)
+[node name="spieler" parent="." instance=ExtResource("1_t1qd2")]
+position = Vector2(60, 34)
 
-[node name="Camera2D" type="Camera2D" parent="Spieler"]
-position = Vector2(-1, -6)
+[node name="Camera2D" type="Camera2D" parent="spieler"]
+position = Vector2(-1, 6)
 zoom = Vector2(4, 4)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(48, 43)
+[node name="Tilemaps" type="Node" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-48, -58)
-shape = SubResource("WorldBoundaryShape2D_ucdnl")
+[node name="Ground" type="TileMapLayer" parent="Tilemaps"]
+tile_set = SubResource("TileSet_bsai8")

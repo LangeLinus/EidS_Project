@@ -620,6 +620,7 @@ sources/0 = SubResource("TileSetAtlasSource_57ija")
 [node name="spieler" parent="." instance=ExtResource("1_t1qd2")]
 z_index = 2
 position = Vector2(64, -57)
+rotation = -1.5708
 
 [node name="Camera2D" type="Camera2D" parent="spieler"]
 position = Vector2(-8, -13)

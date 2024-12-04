@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ciksiyx2c8iyk"]
 
-[ext_resource type="Script" path="res://scripts/spieler.gd" id="1_ofxmx"]
+[ext_resource type="Script" path="res://scripts/Jetskisteuerung.gd" id="1_ofxmx"]
 [ext_resource type="Texture2D" uid="uid://sdnvbl1rgli8" path="res://assets/Jetski0.png" id="2_w6a23"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m5q4q"]

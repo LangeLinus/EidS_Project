@@ -22,4 +22,5 @@ z_as_relative = false
 position = Vector2(0, 1)
 
 [node name="TileMapLayer2" parent="." instance=ExtResource("3_e2nym")]
+visible = false
 z_as_relative = false

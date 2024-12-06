@@ -1,15 +1,13 @@
 extends Node2D
 
 var world_parts = []
-var current_position = Vector2(0, 0) #position wo das nächste teil andocken wird
-var segment_height = 1250  #Segmentlänge
+var current_position = Vector2(0, 3200) #position wo das nächste teil andocken wird
+var segment_height = 3200  #Segmentlänge
 # Lade die Weltsegmente
 var test_1 = preload("res://scenes/world_parts/testwelt1.tscn")
 var test_2 = preload("res://scenes/world_parts/testwelt2.tscn")
 
 func _ready():
-
-	
 	world_parts = [test_1, test_2]
 	
 	# Initiale Segmente generieren

@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-@export var speed = 25000 # wie schnell wir sind
+@export var speed = 400 # wie schnell wir sind
 @export var rotation_speed = 2.5 # das ist in so wikeldingern angegeben ka nicht groß verändern 
 
 var rotation_direction = 0

@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://chw3gj5h5235s"]
+
+[ext_resource type="Script" path="res://scripts/Name.gd" id="1_rysrm"]
+[ext_resource type="Script" path="res://scripts/label_2.gd" id="2_c2g5a"]
+[ext_resource type="Script" path="res://scripts/start_game.gd" id="3_4wkld"]
+
+[node name="MainScreen" type="Node2D"]
+
+[node name="Name" type="Label" parent="."]
+offset_left = 185.0
+offset_top = 143.0
+offset_right = 312.0
+offset_bottom = 166.0
+text = "Jetski Adventure"
+script = ExtResource("1_rysrm")
+
+[node name="Instruction" type="Label" parent="."]
+offset_left = 837.0
+offset_top = 229.0
+offset_right = 986.0
+offset_bottom = 252.0
+text = "Press W,A,D to Play"
+script = ExtResource("2_c2g5a")
+
+[node name="Start Game" type="Button" parent="."]
+offset_left = 474.0
+offset_top = 513.0
+offset_right = 701.0
+offset_bottom = 603.0
+text = "Start the Game"
+script = ExtResource("3_4wkld")

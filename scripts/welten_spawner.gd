@@ -9,7 +9,7 @@ var test_2 = preload("res://scenes/world_parts/testwelt2.tscn")
 
 func _ready():
 	world_parts = [test_1, test_2]
-	
+	current_position.y #+=300
 	# Initiale Segmente generieren
 	for i in range(5):
 		generate_next_part()

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://1g5tdcj5c28m"]
+[gd_scene load_steps=4 format=3 uid="uid://1g5tdcj5c28m"]
 
 [ext_resource type="Script" path="res://scripts/welten_spawner.gd" id="1_68mw4"]
 [ext_resource type="PackedScene" uid="uid://ciksiyx2c8iyk" path="res://scenes/spieler.tscn" id="1_t1qd2"]
+[ext_resource type="Script" path="res://scripts/label.gd" id="3_xfic8"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_68mw4")
@@ -13,4 +14,17 @@ rotation = -1.5708
 
 [node name="Camera2D" type="Camera2D" parent="spieler"]
 position = Vector2(-8, -13)
+rotation = 1.56946
+ignore_rotation = false
 zoom = Vector2(2, 2)
+
+[node name="Label" type="Label" parent="spieler"]
+offset_left = 153.001
+offset_top = -301.999
+offset_right = 193.001
+offset_bottom = -278.999
+rotation = 1.57479
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource("3_xfic8")
+metadata/_edit_use_anchors_ = true

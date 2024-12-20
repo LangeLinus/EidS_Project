@@ -6,4 +6,5 @@ func _ready():
 
 func on_button_pressed():
 	# Lade die Spielszene
-	get_tree().change_scene("res://scenes/game.tscn")
+	var load_kram = load("res://scenes/game.tscn")
+	get_tree().change_scene_to_packed(load_kram)

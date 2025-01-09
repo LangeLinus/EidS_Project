@@ -15,7 +15,8 @@ func _physics_process(delta: float) -> void:
 	is_moving()
 	move_and_slide()
 	if is_on_wall() or is_on_ceiling():
-		var load_kram = load("res://scenes/MainScreen.tscn")
+		var load_kram = load("res://scenes/respawn.tscn")
+		
 		get_tree().change_scene_to_packed(load_kram)
 	
 func get_input():

@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf4lq0ug0wvv0"]
+
+[ext_resource type="Script" path="res://scripts/start_game.gd" id="2_peyhe"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_66cr3"]
+font_size = 40
+
+[node name="Respawn" type="Node2D"]
+
+[node name="Start Game" type="Button" parent="."]
+offset_left = 832.0
+offset_top = 555.0
+offset_right = 1059.0
+offset_bottom = 645.0
+text = "Play again"
+script = ExtResource("2_peyhe")
+
+[node name="Death message" type="Label" parent="."]
+offset_left = 855.0
+offset_top = 385.0
+offset_right = 1032.0
+offset_bottom = 440.0
+text = "You DIED"
+label_settings = SubResource("LabelSettings_66cr3")

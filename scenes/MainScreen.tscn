@@ -3,13 +3,28 @@
 [ext_resource type="Script" path="res://scripts/Name.gd" id="1_rysrm"]
 [ext_resource type="Script" path="res://scripts/label_2.gd" id="2_c2g5a"]
 [ext_resource type="Script" path="res://scripts/start_game.gd" id="3_4wkld"]
-[ext_resource type="Script" path="res://scripts/credits.gd" id="4_qfh4g"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_lcn8n"]
 font_size = 70
 
 [sub_resource type="LabelSettings" id="LabelSettings_3c3lj"]
 font_size = 23
+
+[sub_resource type="GDScript" id="GDScript_yxd1l"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	self.connect(\"pressed\", Callable(self, \"on_button_pressed\"))
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func on_button_pressed():
+	# Lade die Spielszene
+	var load_kram = load(\"res://scenes/credits.tscn\")
+	get_tree().change_scene_to_packed(load_kram)
+"
 
 [node name="MainScreen" type="Node2D"]
 position = Vector2(3, 3)
@@ -46,4 +61,4 @@ offset_top = 666.0
 offset_right = 1061.0
 offset_bottom = 756.0
 text = "Credits"
-script = ExtResource("4_qfh4g")
+script = SubResource("GDScript_yxd1l")

@@ -8,7 +8,7 @@
 font_size = 20
 
 [node name="Game" type="Node2D"]
-position = Vector2(-1, -2)
+position = Vector2(-2, -4)
 script = ExtResource("1_68mw4")
 
 [node name="spieler" parent="." instance=ExtResource("1_t1qd2")]

@@ -7,5 +7,7 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func on_button_pressed():
+	# Lade die Spielszene
+	var load_kram = load("res://scenes/MainScreen.tscn")
+	get_tree().change_scene_to_packed(load_kram)

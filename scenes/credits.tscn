@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dec4ajbw2f5t0"]
+
+[ext_resource type="Script" path="res://scripts/backToMainMenu.gd" id="1_ik7l2"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Credit kram" type="Label" parent="."]
+offset_left = 851.0
+offset_top = 416.0
+offset_right = 1095.0
+offset_bottom = 439.0
+text = "Developers: Linus, Tristan, Felix"
+
+[node name="MainMenu" type="Button" parent="."]
+offset_left = 892.0
+offset_top = 508.0
+offset_right = 1049.0
+offset_bottom = 570.0
+text = "Back to Main Menu
+"
+script = ExtResource("1_ik7l2")

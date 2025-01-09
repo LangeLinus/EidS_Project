@@ -1,31 +1,49 @@
-[gd_scene load_steps=4 format=3 uid="uid://chw3gj5h5235s"]
+[gd_scene load_steps=7 format=3 uid="uid://ccbseagryj7en"]
 
 [ext_resource type="Script" path="res://scripts/Name.gd" id="1_rysrm"]
 [ext_resource type="Script" path="res://scripts/label_2.gd" id="2_c2g5a"]
 [ext_resource type="Script" path="res://scripts/start_game.gd" id="3_4wkld"]
+[ext_resource type="Script" path="res://scripts/credits.gd" id="4_qfh4g"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lcn8n"]
+font_size = 70
+
+[sub_resource type="LabelSettings" id="LabelSettings_3c3lj"]
+font_size = 23
 
 [node name="MainScreen" type="Node2D"]
+position = Vector2(3, 3)
 
 [node name="Name" type="Label" parent="."]
-offset_left = 185.0
-offset_top = 143.0
-offset_right = 312.0
-offset_bottom = 166.0
+offset_left = 693.0
+offset_top = 277.0
+offset_right = 1248.0
+offset_bottom = 373.0
 text = "Jetski Adventure"
+label_settings = SubResource("LabelSettings_lcn8n")
 script = ExtResource("1_rysrm")
 
 [node name="Instruction" type="Label" parent="."]
-offset_left = 837.0
-offset_top = 229.0
-offset_right = 986.0
-offset_bottom = 252.0
+offset_left = 836.0
+offset_top = 432.0
+offset_right = 1081.0
+offset_bottom = 503.0
 text = "Press W,A,D to Play"
+label_settings = SubResource("LabelSettings_3c3lj")
 script = ExtResource("2_c2g5a")
 
 [node name="Start Game" type="Button" parent="."]
-offset_left = 474.0
-offset_top = 513.0
-offset_right = 701.0
-offset_bottom = 603.0
+offset_left = 832.0
+offset_top = 555.0
+offset_right = 1059.0
+offset_bottom = 645.0
 text = "Start the Game"
 script = ExtResource("3_4wkld")
+
+[node name="Credits" type="Button" parent="."]
+offset_left = 834.0
+offset_top = 666.0
+offset_right = 1061.0
+offset_bottom = 756.0
+text = "Credits"
+script = ExtResource("4_qfh4g")

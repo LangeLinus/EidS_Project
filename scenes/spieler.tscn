@@ -14,8 +14,8 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hmw3v"]
-size = Vector2(34, 19)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wtjqc"]
+height = 41.9316
 
 [node name="spieler" type="CharacterBody2D"]
 script = ExtResource("1_ofxmx")
@@ -28,5 +28,6 @@ autoplay = "default"
 frame_progress = 0.581965
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-6, -9.5)
-shape = SubResource("RectangleShape2D_hmw3v")
+position = Vector2(-9, -9)
+rotation = 1.55782
+shape = SubResource("CapsuleShape2D_wtjqc")

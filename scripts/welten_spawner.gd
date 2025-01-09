@@ -17,6 +17,7 @@ func _ready():
 func _process(delta):
 	check_and_generate_segments()
 	remove_offscreen_segments()
+	
 
 func check_and_generate_segments():
 	# Position der Kamera holen

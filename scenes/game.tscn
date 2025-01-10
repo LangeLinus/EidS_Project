@@ -1,17 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://1g5tdcj5c28m"]
+[gd_scene load_steps=5 format=3 uid="uid://1g5tdcj5c28m"]
 
 [ext_resource type="Script" path="res://scripts/welten_spawner.gd" id="1_68mw4"]
 [ext_resource type="PackedScene" uid="uid://ciksiyx2c8iyk" path="res://scenes/spieler.tscn" id="1_t1qd2"]
 [ext_resource type="Script" path="res://scripts/score.gd" id="3_xfic8"]
-[ext_resource type="PackedScene" uid="uid://bf4lq0ug0wvv0" path="res://scenes/respawn.tscn" id="4_kuo74"]
-[ext_resource type="Script" path="res://scripts/start_game.gd" id="5_ikmlw"]
-[ext_resource type="Script" path="res://scripts/death_message_2.gd" id="6_ebkug"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7xdpi"]
 font_size = 20
-
-[sub_resource type="LabelSettings" id="LabelSettings_0okk1"]
-font_size = 40
 
 [node name="Game" type="Node2D"]
 position = Vector2(-2, -4)
@@ -42,21 +36,3 @@ label_settings = SubResource("LabelSettings_7xdpi")
 visible_characters_behavior = 1
 script = ExtResource("3_xfic8")
 metadata/_edit_use_anchors_ = true
-
-[node name="Respawn" parent="spieler" instance=ExtResource("4_kuo74")]
-
-[node name="Start Game2" type="Button" parent="spieler/Respawn"]
-offset_left = 832.0
-offset_top = 555.0
-offset_right = 1059.0
-offset_bottom = 645.0
-text = "Play again"
-script = ExtResource("5_ikmlw")
-
-[node name="Death message2" type="Label" parent="spieler/Respawn"]
-offset_left = 855.0
-offset_top = 385.0
-offset_right = 1032.0
-offset_bottom = 440.0
-label_settings = SubResource("LabelSettings_0okk1")
-script = ExtResource("6_ebkug")

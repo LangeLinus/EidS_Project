@@ -14,7 +14,7 @@ func _physics_process(delta: float) -> void:
 	rotation += rotation_direction * rotation_speed * delta #drehen
 	is_moving()
 	move_and_slide()
-	if is_on_wall() or is_on_ceiling():
+	if is_on_wall() or is_on_ceiling() or is_on_floor():
 		var load_kram = load("res://scenes/respawn.tscn")
 		
 		get_tree().change_scene_to_packed(load_kram)

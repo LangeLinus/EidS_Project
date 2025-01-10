@@ -4,11 +4,18 @@ var world_parts = []
 var current_position = Vector2(0, 3200) #position wo das nächste teil andocken wird
 var segment_height = 3200  #Segmentlänge
 # Lade die Weltsegmente
-var test_1 = preload("res://scenes/world_parts/testwelt1.tscn")
-var test_2 = preload("res://scenes/world_parts/testwelt2.tscn")
+var test_1 = preload("res://scenes/world_parts/weltfelix1.tscn")
+var test_2 = preload("res://scenes/world_parts/weltfelix2.tscn")
+var test_3 = preload("res://scenes/world_parts/weltfelix3.tscn")
+var test_4 = preload("res://scenes/world_parts/WeltLinus1.tscn")
+var test_5 = preload("res://scenes/world_parts/WeltLinus2.tscn")
+var test_6 = preload("res://scenes/world_parts/WeltLinus3.tscn")
+var test_7 = preload("res://scenes/world_parts/WeltTristan1.tscn")
+var test_8 = preload("res://scenes/world_parts/WeltTristan2.tscn")
+var test_9 = preload("res://scenes/world_parts/WeltTristan3.tscn")
 
 func _ready():
-	world_parts = [test_1, test_2]
+	world_parts = [ test_1,test_2,test_3,test_4,test_5,test_6,test_7,test_8,test_9]
 	current_position.y +=3200
 	# Initiale Segmente generieren
 	for i in range(5):

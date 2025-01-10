@@ -19,6 +19,7 @@ height = 41.9316
 
 [node name="spieler" type="CharacterBody2D"]
 script = ExtResource("1_ofxmx")
+rotation_speed = 3.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-8.00001, -8)
